@@ -61,6 +61,9 @@ case $OS_FLAG in
 			SOUND_PATH=$WINE_PATH_OVERRIDE
 		else
 			DETERMINE_WINEPREFIX_PATH
+
+			echo "changeoofsound: Modifying wineprefix $SOUND_PATH"
+
 			SOUND_PATH="$SOUND_PATH/$WINE_INSTALL_PATH"
 
 			if ! [[ -d $SOUND_PATH ]]
